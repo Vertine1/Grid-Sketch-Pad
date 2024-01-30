@@ -16,4 +16,9 @@ body {
     height: 30px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.grid-square:hover {
+    background-color: #7d27e0; /* Change the color as desired */
 }
