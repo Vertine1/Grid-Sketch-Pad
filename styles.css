@@ -1,6 +1,7 @@
+
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -9,16 +10,34 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 960px;
+    margin-top: 20px;
 }
 
 .grid-square {
     width: 30px;
     height: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #08b634;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
 }
 
 .grid-square:hover {
     background-color: #7d27e0; /* Change the color as desired */
+}
+
+#new-grid-button {
+    margin-bottom: 20px;
+}
+#new-grid-button {
+    background-color: #7d27e0;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-grid-button:hover {
+    background-color: #5e1a9c;
 }
